@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Wanton-shop</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/style-shop.css">
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+
+<body>
+  <div class="loading-wrapper">
+    <div style="color: #b477bc" class="loading la-square-jelly-box la-2x">
+        <div></div>
+        <div></div>
+    </div>
+</div>   
+ <div class="background">
+    <div class="container" style="background-color: white;margin-top: 40px;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img  class="col-logo" src="img/wanton-logo (2).png" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: black;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" link href="home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" link href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">NEW ARIVALS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Actions
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><img class="top-cart-icon"src="img/cart-icon.png" >CART</a></li>
+                    <li><a class="dropdown-item" link href="login.html" ><img  class="top-user-icon" src="img/user-icon.png" >LOGIN</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img  class="top-options-icon" src="img/options-icon.png">OPTIONS</a></li>
+                    </ul>
+                </li>
+              
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" style=" font-size: 10px;">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+   
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-12" >
+                <div class="shopping">Shop/Albums</div>
+                 <div class="album">-ALBUM-</div>
+            </div>
+         </div>
+
+        <div class="row" style="  display: flex; justify-content: center;align-items: center;" >
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/al1.jpg" alt="Thumbnail Image 1"style="width: 100%;">
+              <div class="caption">
+                <h3>Green Day/american ediot</h3>
+                <p>$13.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()" >Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/al2.jpg" alt="Thumbnail Image 2"style="width: 100%;">
+              <div class="caption">
+                <h3>Tyler The Creater/IGOR</h3>
+                <p>$13.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/al3.jpg" alt="Thumbnail Image 3"style="width: 100%;">
+              <div class="caption">
+                <h3>Nirvana/<br>nevermind</h3>
+                <p>$13.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/al4.jpg" alt="Thumbnail Image 4"style="width: 100%;">
+              <div class="caption">
+                <h3>The Weeknd/after hours</h3>
+                <p>$13.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/al5.jpg" alt="Thumbnail Image 1"style="width: 100%;">
+                <div class="caption">
+                  <h3>J.cole/2014forest hillsdrive</h3>
+                  <p>$13.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/al6.jpg" alt="Thumbnail Image 2"style="width: 100%;">
+                <div class="caption">
+                  <h3>The Weeknd/star boy</h3>
+                  <p>$13.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/al7.jpg" alt="Thumbnail Image 3"style="width: 100%;">
+                <div class="caption">
+                  <h3>N.W.A/staight outta comton</h3>
+                  <p>>$13.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/al8.jpg" alt="Thumbnail Image 4"style="width: 100%;">
+                <div class="caption">
+                  <h3>Kendrick Lamar/ D.A.M.N</h3>
+                  <p>>$13.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-12" style="margin-top: 90px;">
+                <div class="shopping">Shop/Otaku's</div>
+                 <div class="album">-Otaku's-</div>
+            </div>
+         </div>
+
+        <div class="row" style="  display: flex; justify-content: center;align-items: center;" >
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/chainsaw1.jpg" alt="Thumbnail Image 1"style="width: 100%;">
+              <div class="caption">
+                <h3>chainsaw man 01</h3>
+                <p>$2.99</p>
+                <p><a  class="btn btn-primary" role="button"  onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/chainsaw2.jpg" alt="Thumbnail Image 2"style="width: 100%;">
+              <div class="caption">
+                <h3>chainsaw man 02</h3>
+                <p>$2.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/chainsaw3.jpg" alt="Thumbnail Image 3"style="width: 100%;">
+              <div class="caption">
+                <h3>chainsaw man 03</h3>
+                    <p>$2.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/chainsaw4.jpg" alt="Thumbnail Image 4"style="width: 100%;">
+              <div class="caption">
+                <h3>chainsaw man 04</h3>
+                    <p>$2.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/chainsaw5.jpg" alt="Thumbnail Image 1"style="width: 100%;">
+                <div class="caption">
+                    <h3>chainsaw man 05</h3>
+                    <p>$2.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/chainsaw6.jpg" alt="Thumbnail Image 2"style="width: 100%;">
+                <div class="caption">
+                    <h3>chainsaw man 06</h3>
+                    <p>$2.99</p>
+                  <p><a class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/chainsaw7.jpg" alt="Thumbnail Image 3"style="width: 100%;">
+                <div class="caption">
+                    <h3>chainsaw man 07</h3>
+                    <p>$2.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/chainsaw8.jpg" alt="Thumbnail Image 4"style="width: 100%;">
+                <div class="caption">
+                    <h3>chainsaw man 08</h3>
+                    <p>$2.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-12" style="margin-top: 90px;">
+                <div class="shopping">Shop/Cards</div>
+                 <div class="album">-CARDS-</div>
+            </div>
+         </div>
+
+        <div class="row" onload="showalert()" style="  display: flex; justify-content: center;align-items: center;" >
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/nba1.jpg" alt="Thumbnail Image 1"style="width: 100%;">
+              <div class="caption">
+                <h3>Ja Morant</h3>
+                <p>$22.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/nba2.jpg" alt="Thumbnail Image 2"style="width: 100%;">
+              <div class="caption">
+                <h3>Lamelo Ball</h3>
+                <p>$18.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/nba3.jpg" alt="Thumbnail Image 3"style="width: 100%;">
+              <div class="caption">
+                <h3>Cade Cunningham</h3>
+                <p>$10.99</p>
+                <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="thumbnail"><img class="holy" src="img/nba4.jpg" alt="Thumbnail Image 4"style="width: 100%;">
+              <div class="caption">
+                <h3>Trae Young</h3>
+                <p>$18.99</p>
+                <p><a class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/nba5.jpg" alt="Thumbnail Image 1"style="width: 100%;">
+                <div class="caption">
+                    <h3>Scottie Barnes</h3>
+                    <p>$10.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/nba6.jpg" alt="Thumbnail Image 2"style="width: 100%;">
+                <div class="caption">
+                    <h3>David Robinsond</h3>
+                      <p>$20.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/nba7.jpg" alt="Thumbnail Image 3"style="width: 100%;">
+                <div class="caption">
+                    <h3>Lebron James</h3>
+                    <p>$22.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="thumbnail"><img class="holy" src="img/nba8.jpg" alt="Thumbnail Image 4"style="width: 100%;">
+                <div class="caption">
+                    <h3>Allen Iverson</h3>
+                    <p>$22.99</p>
+                  <p><a  class="btn btn-primary" role="button" onClick="cart()">Buy Now</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="container" style="background-color: white;">
+        <div class="row" >
+            <div class="col-md-12"style="height: 100px;   display: flex; justify-content: center;align-items: center;" >
+                <div class="pages">
+                    <a href="#" class="btnpage" role="button">1</a>
+                    <a link href="shop2.html" class="btnpage1" role="button">2</a>
+                    <a link href="shop2.html" class="btnpage2" role="button">→</a>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container footer" style="height:100px;">
+      <div class="row"  >
+          <div class="col-md-3" style="background-color:#b0afaf;width: 25%;"> 
+          <a href="https://www.youtube.com/" style="width: 25%;"><img class="foot-pic" src="img/youtube.png"></a>
+           </div>
+          <div class="col-md-3" style="background-color:#b0afaf;width: 25%;"> 
+          <a  href="https://www.facebook.com/" style="width: 25%;"><img class="foot-pic" src="img/facebook.png"></a>
+           </div>
+          <div class="col-md-3" style="background-color:#b0afaf;width: 25%;"> 
+          <a  href="https://www.instagram.com/" style="width: 25%;"><img class="foot-pic" src="img/instagram.png"></a>
+          </div>
+           <div class="col-md-3" style="background-color:#b0afaf;width: 25%;"> 
+           <a href="https://www.twitter.com/ " style="width: 25%;"><img class="foot-pic" src="img/twitter.png"></a>
+          </div>
+      </div>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
+<scripy rel="stylesheet" href="js/javascript.js">    
+<script src="js/jQuery.js"></script>
+<script src="js/bootstrap.min.js"></script>       
+</body>

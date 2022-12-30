@@ -55,5 +55,3 @@ $(".btn").click(function(){
     }, delay:0.5})
   
 });
-
-
